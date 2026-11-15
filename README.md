@@ -1,2 +1,2 @@
-![C++ Logo](https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png)     
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)    
 
