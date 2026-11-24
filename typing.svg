@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <style>
+    .hand-l { animation: typeL 0.4s ease-in-out infinite alternate; }
+    .hand-r { animation: typeR 0.4s ease-in-out infinite alternate 0.2s; }
+    .cursor { animation: blink 1s step-end infinite; }
+    .line1 { animation: fade1 4s linear infinite; }
+    .line2 { animation: fade2 4s linear infinite; }
+    .line3 { animation: fade3 4s linear infinite; }
+    .steam { animation: rise 2s ease-out infinite; }
+    .steam2 { animation: rise 2s ease-out infinite 1s; }
+
+    @keyframes typeL { 0% { transform: translateY(0); } 100% { transform: translateY(4px); } }
+    @keyframes typeR { 0% { transform: translateY(0); } 100% { transform: translateY(4px); } }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes fade1 { 0% { opacity: 0; } 10% { opacity: 1; } 100% { opacity: 1; } }
+    @keyframes fade2 { 0%,20% { opacity: 0; } 30% { opacity: 1; } 100% { opacity: 1; } }
+    @keyframes fade3 { 0%,40% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 1; } }
+    @keyframes rise { 0% { transform: translateY(0); opacity: 0.6; } 100% { transform: translateY(-12px); opacity: 0; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1e1e2e" rx="12"/>
+
+  <!-- Desk -->
+  <rect x="50" y="220" width="300" height="12" fill="#5c4d3c" rx="3"/>
+  <rect x="70" y="232" width="10" height="50" fill="#4a3d2f"/>
+  <rect x="320" y="232" width="10" height="50" fill="#4a3d2f"/>
+
+  <!-- Monitor -->
+  <rect x="120" y="100" width="160" height="110" fill="#2a2a3a" rx="6"/>
+  <rect x="128" y="108" width="144" height="90" fill="#1a1a2e" rx="3"/>
+  <rect x="185" y="210" width="30" height="10" fill="#2a2a3a"/>
+
+  <!-- Screen content -->
+  <rect class="line1" x="138" y="120" width="60" height="4" fill="#7ec8e3" rx="2"/>
+  <rect class="line2" x="138" y="132" width="90" height="4" fill="#98c379" rx="2"/>
+  <rect class="line3" x="138" y="144" width="45" height="4" fill="#e5c07b" rx="2"/>
+  <rect class="cursor" x="186" y="144" width="4" height="8" fill="#fff"/>
+
+  <!-- Coffee mug -->
+  <rect x="310" y="200" width="18" height="20" fill="#c0392b" rx="3"/>
+  <path d="M328 205 Q335 210 328 215" stroke="#c0392b" stroke-width="2" fill="none"/>
+  <circle class="steam" cx="319" cy="196" r="3" fill="none" stroke="#aaa" stroke-width="1"/>
+  <circle class="steam2" cx="323" cy="194" r="2" fill="none" stroke="#aaa" stroke-width="1"/>
+
+  <!-- Person -->
+  <!-- Head -->
+  <circle cx="200" cy="155" r="22" fill="#f0c8a0"/>
+  <!-- Hair -->
+  <path d="M178 148 Q180 130 200 128 Q220 130 222 148" fill="#3a2a1a"/>
+  <!-- Eyes -->
+  <circle cx="193" cy="155" r="2" fill="#333"/>
+  <circle cx="207" cy="155" r="2" fill="#333"/>
+  <!-- Mouth -->
+  <path d="M196 165 Q200 168 204 165" stroke="#333" stroke-width="1.5" fill="none"/>
+
+  <!-- Body -->
+  <rect x="185" y="177" width="30" height="40" fill="#4a90d9" rx="5"/>
+
+  <!-- Arms -->
+  <line x1="185" y1="190" x2="155" y2="215" stroke="#f0c8a0" stroke-width="6" stroke-linecap="round"/>
+  <line x1="215" y1="190" x2="245" y2="215" stroke="#f0c8a0" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Hands (animated) -->
+  <circle class="hand-l" cx="153" cy="217" r="5" fill="#f0c8a0"/>
+  <circle class="hand-r" cx="247" cy="217" r="5" fill="#f0c8a0"/>
+
+  <!-- Keyboard -->
+  <rect x="140" y="218" width="120" height="8" fill="#3a3a4a" rx="3"/>
+</svg>   
